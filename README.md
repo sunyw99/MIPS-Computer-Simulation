@@ -4,4 +4,4 @@ This is a term project from the course VE370 Intro to Computer Organization. In 
 * The arithmetic-logical instructions *add*, *addi*, *sub*, *and*, *andi*, *or*, and *slt*
 * The jumping instructions branch equal (*beq*), branch not equal (*bne*), and jump (*j*)
 
-For more detailed descriptions and requirements, please refer to <i>ProjectDescription.pdf</i>.
+For more detailed descriptions and requirements, please refer to <i>ProjectDescription.pdf</i>. For simulation results and conclusions, please refer to <i>ProjectReport.pdf</i>.
