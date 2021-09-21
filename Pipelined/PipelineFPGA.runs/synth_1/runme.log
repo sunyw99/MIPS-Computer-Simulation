@@ -1,0 +1,840 @@
+
+*** Running vivado
+    with args -log Demo.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Demo.tcl
+
+
+****** Vivado v2017.2 (64-bit)
+  **** SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+  **** IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source Demo.tcl -notrace
+Command: synth_design -top Demo -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t-cpg236'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3808 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 309.867 ; gain = 78.867
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Demo' [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/new/Demo.v:23]
+INFO: [Synth 8-638] synthesizing module 'top' [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/top.v:23]
+INFO: [Synth 8-638] synthesizing module 'hazard' [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/hazard detection.v:21]
+WARNING: [Synth 8-6014] Unused sequential element stall2_reg was removed.  [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/hazard detection.v:41]
+WARNING: [Synth 8-6014] Unused sequential element pcwrite_reg was removed.  [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/hazard detection.v:47]
+INFO: [Synth 8-256] done synthesizing module 'hazard' (1#1) [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/hazard detection.v:21]
+INFO: [Synth 8-638] synthesizing module 'PC' [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/PC.v:23]
+INFO: [Synth 8-256] done synthesizing module 'PC' (2#1) [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/PC.v:23]
+INFO: [Synth 8-638] synthesizing module 'Mux_PC' [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/Mux_PC.v:23]
+WARNING: [Synth 8-567] referenced signal 'BrAdd' should be on the sensitivity list [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/Mux_PC.v:29]
+WARNING: [Synth 8-567] referenced signal 'JAdd' should be on the sensitivity list [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/Mux_PC.v:29]
+INFO: [Synth 8-256] done synthesizing module 'Mux_PC' (3#1) [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/Mux_PC.v:23]
+INFO: [Synth 8-638] synthesizing module 'if_flush' [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/if_flush.v:16]
+INFO: [Synth 8-256] done synthesizing module 'if_flush' (4#1) [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/if_flush.v:16]
+INFO: [Synth 8-638] synthesizing module 'forward_compare' [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/forward.v:61]
+WARNING: [Synth 8-6014] Unused sequential element branch_reg was removed.  [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/forward.v:77]
+INFO: [Synth 8-256] done synthesizing module 'forward_compare' (5#1) [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/forward.v:61]
+INFO: [Synth 8-638] synthesizing module 'forward' [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/forward.v:23]
+INFO: [Synth 8-256] done synthesizing module 'forward' (6#1) [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/forward.v:23]
+INFO: [Synth 8-638] synthesizing module 'lwsw' [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/lwsw.v:23]
+INFO: [Synth 8-256] done synthesizing module 'lwsw' (7#1) [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/lwsw.v:23]
+INFO: [Synth 8-638] synthesizing module 'MEM_WB' [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/MEM_WB.v:23]
+INFO: [Synth 8-256] done synthesizing module 'MEM_WB' (8#1) [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/MEM_WB.v:23]
+INFO: [Synth 8-638] synthesizing module 'EX_MEM' [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/EX_MEM.v:23]
+INFO: [Synth 8-256] done synthesizing module 'EX_MEM' (9#1) [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/EX_MEM.v:23]
+INFO: [Synth 8-638] synthesizing module 'ID_EX_register' [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/ID_EX.v:1]
+INFO: [Synth 8-256] done synthesizing module 'ID_EX_register' (10#1) [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/ID_EX.v:1]
+INFO: [Synth 8-638] synthesizing module 'IFID' [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/IFID.v:17]
+INFO: [Synth 8-256] done synthesizing module 'IFID' (11#1) [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/IFID.v:17]
+INFO: [Synth 8-638] synthesizing module 'IF' [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/IF.v:18]
+INFO: [Synth 8-638] synthesizing module 'InstructionMem' [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/InstructionMem.v:23]
+INFO: [Synth 8-256] done synthesizing module 'InstructionMem' (12#1) [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/InstructionMem.v:23]
+WARNING: [Synth 8-3848] Net PC in module/entity IF does not have driver. [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/IF.v:21]
+INFO: [Synth 8-256] done synthesizing module 'IF' (13#1) [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/IF.v:18]
+WARNING: [Synth 8-350] instance 'iff' of module 'IF' requires 4 connections, but only 3 given [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/top.v:69]
+INFO: [Synth 8-638] synthesizing module 'idwb' [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/idwb.v:17]
+INFO: [Synth 8-638] synthesizing module 'control' [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/control.v:19]
+INFO: [Synth 8-256] done synthesizing module 'control' (14#1) [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/control.v:19]
+INFO: [Synth 8-638] synthesizing module 'signextension' [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/signextension.v:16]
+INFO: [Synth 8-256] done synthesizing module 'signextension' (15#1) [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/signextension.v:16]
+INFO: [Synth 8-638] synthesizing module 'shift2' [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/shift2.v:16]
+INFO: [Synth 8-256] done synthesizing module 'shift2' (16#1) [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/shift2.v:16]
+INFO: [Synth 8-638] synthesizing module 'adder' [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/adder.v:16]
+INFO: [Synth 8-256] done synthesizing module 'adder' (17#1) [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/adder.v:16]
+INFO: [Synth 8-638] synthesizing module 'mux_2_1_32bit' [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/mux.v:16]
+INFO: [Synth 8-226] default block is never used [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/mux.v:24]
+INFO: [Synth 8-256] done synthesizing module 'mux_2_1_32bit' (18#1) [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/mux.v:16]
+INFO: [Synth 8-638] synthesizing module 'register' [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/register.v:21]
+INFO: [Synth 8-256] done synthesizing module 'register' (19#1) [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/register.v:21]
+INFO: [Synth 8-638] synthesizing module 'mux_4_1_32bit' [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/mux.v:32]
+INFO: [Synth 8-226] default block is never used [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/mux.v:40]
+INFO: [Synth 8-256] done synthesizing module 'mux_4_1_32bit' (20#1) [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/mux.v:32]
+INFO: [Synth 8-638] synthesizing module 'equal' [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/equal.v:17]
+INFO: [Synth 8-256] done synthesizing module 'equal' (21#1) [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/equal.v:17]
+WARNING: [Synth 8-567] referenced signal 'instruction' should be on the sensitivity list [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/idwb.v:56]
+WARNING: [Synth 8-6014] Unused sequential element rt2_reg was removed.  [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/idwb.v:62]
+INFO: [Synth 8-256] done synthesizing module 'idwb' (22#1) [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/idwb.v:17]
+INFO: [Synth 8-638] synthesizing module 'EX' [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/EX.v:56]
+INFO: [Synth 8-638] synthesizing module 'mux_2_1_5bit' [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/mux.v:51]
+INFO: [Synth 8-226] default block is never used [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/mux.v:59]
+INFO: [Synth 8-256] done synthesizing module 'mux_2_1_5bit' (23#1) [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/mux.v:51]
+INFO: [Synth 8-638] synthesizing module 'ALU_Control' [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/EX.v:28]
+INFO: [Synth 8-256] done synthesizing module 'ALU_Control' (24#1) [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/EX.v:28]
+INFO: [Synth 8-638] synthesizing module 'ALU' [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/EX.v:2]
+	Parameter n bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ALU' (25#1) [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/EX.v:2]
+INFO: [Synth 8-256] done synthesizing module 'EX' (26#1) [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/EX.v:56]
+INFO: [Synth 8-638] synthesizing module 'mem' [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/mem.v:23]
+INFO: [Synth 8-638] synthesizing module 'DataMem' [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/DataMem.v:23]
+INFO: [Synth 8-256] done synthesizing module 'DataMem' (27#1) [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/DataMem.v:23]
+INFO: [Synth 8-256] done synthesizing module 'mem' (28#1) [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/mem.v:23]
+WARNING: [Synth 8-6014] Unused sequential element cycle_reg was removed.  [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/top.v:44]
+INFO: [Synth 8-256] done synthesizing module 'top' (29#1) [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/top.v:23]
+INFO: [Synth 8-638] synthesizing module 'clkdiv_1Hz' [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Freshman/VE270/lab 6/lab 6.srcs/sources_1/new/clock_divider_1Hz.v:23]
+	Parameter C bound to: 1000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clkdiv_1Hz' (30#1) [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Freshman/VE270/lab 6/lab 6.srcs/sources_1/new/clock_divider_1Hz.v:23]
+INFO: [Synth 8-638] synthesizing module 'RingCounter' [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/new/RingCounter.v:23]
+INFO: [Synth 8-256] done synthesizing module 'RingCounter' (31#1) [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/new/RingCounter.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/new/Demo.v:141]
+WARNING: [Synth 8-567] referenced signal 'ca1' should be on the sensitivity list [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/new/Demo.v:140]
+WARNING: [Synth 8-567] referenced signal 'ca2' should be on the sensitivity list [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/new/Demo.v:140]
+WARNING: [Synth 8-567] referenced signal 'ca3' should be on the sensitivity list [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/new/Demo.v:140]
+WARNING: [Synth 8-567] referenced signal 'ca4' should be on the sensitivity list [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/new/Demo.v:140]
+INFO: [Synth 8-256] done synthesizing module 'Demo' (32#1) [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/new/Demo.v:23]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[31]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[30]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[29]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[28]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[27]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[26]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[25]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[24]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[23]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[22]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[21]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[20]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[19]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[18]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[17]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[16]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[15]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[14]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[13]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[12]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[11]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[10]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[9]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[8]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[7]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[6]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[5]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[4]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[3]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[2]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[1]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[0]
+WARNING: [Synth 8-3331] design if_flush has unconnected port settle
+WARNING: [Synth 8-3331] design hazard has unconnected port ifidrd[4]
+WARNING: [Synth 8-3331] design hazard has unconnected port ifidrd[3]
+WARNING: [Synth 8-3331] design hazard has unconnected port ifidrd[2]
+WARNING: [Synth 8-3331] design hazard has unconnected port ifidrd[1]
+WARNING: [Synth 8-3331] design hazard has unconnected port ifidrd[0]
+WARNING: [Synth 8-3331] design hazard has unconnected port stall_finish
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 349.195 ; gain = 118.195
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 349.195 ; gain = 118.195
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/constrs_1/new/FPGAtest1.xdc]
+WARNING: [Vivado 12-507] No nets matched 'clk2_IBUF'. [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/constrs_1/new/FPGAtest1.xdc:1]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/constrs_1/new/FPGAtest1.xdc:1]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'pipeline/ie/MEM_out[0]_i_3'. [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/constrs_1/new/FPGAtest1.xdc:40]
+WARNING: [Vivado 12-1023] No nets matched for command 'get_nets -of_objects [get_cells {pipeline/ie/MEM_out[0]_i_3}]'. [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/constrs_1/new/FPGAtest1.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/constrs_1/new/FPGAtest1.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'pipeline/ii/MEM_out[0]_i_5'. [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/constrs_1/new/FPGAtest1.xdc:41]
+WARNING: [Vivado 12-1023] No nets matched for command 'get_nets -of_objects [get_cells {pipeline/ii/MEM_out[0]_i_5}]'. [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/constrs_1/new/FPGAtest1.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/constrs_1/new/FPGAtest1.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-180] No cells matched 'pipeline/ii/pc[15]_i_3'. [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/constrs_1/new/FPGAtest1.xdc:42]
+WARNING: [Vivado 12-1023] No nets matched for command 'get_nets -of_objects [get_cells {pipeline/ii/pc[15]_i_3}]'. [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/constrs_1/new/FPGAtest1.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/constrs_1/new/FPGAtest1.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/constrs_1/new/FPGAtest1.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/constrs_1/new/FPGAtest1.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Demo_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Demo_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 647.902 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 647.902 ; gain = 416.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 647.902 ; gain = 416.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 647.902 ; gain = 416.902
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "flush" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "branch" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "instruction_out" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "instruction_out" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "memory" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "wb" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "m" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "ex" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "jump" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "beq" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "bne" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "ALUControl" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5545] ROM "count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clkdiv" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'an_reg' in module 'RingCounter'
+WARNING: [Synth 8-6014] Unused sequential element an_reg was removed.  [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/new/RingCounter.v:27]
+INFO: [Synth 8-5544] ROM "ca" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-327] inferring latch for variable 'memsrc_reg' [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/imports/Junior/pipeline/lwsw.v:35]
+WARNING: [Synth 8-6014] Unused sequential element an_reg was removed.  [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/new/RingCounter.v:27]
+WARNING: [Synth 8-6014] Unused sequential element an_reg was removed.  [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/new/RingCounter.v:27]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                             0111
+                 iSTATE0 |                               01 |                             1011
+                 iSTATE1 |                               10 |                             1101
+                 iSTATE2 |                               11 |                             1110
+*
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'an_reg' using encoding 'sequential' in module 'RingCounter'
+WARNING: [Synth 8-6014] Unused sequential element an_reg was removed.  [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/new/RingCounter.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'ca_reg' [D:/Junior/PipelineFPGA/PipelineFPGA.srcs/sources_1/new/Demo.v:142]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 647.902 ; gain = 416.902
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   3 Input     32 Bit       Adders := 1     
++---Registers : 
+	              134 Bit    Registers := 1     
+	               32 Bit    Registers := 11    
+	                5 Bit    Registers := 6     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input    134 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 8     
+	  31 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 4     
+	   5 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 5     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 15    
+	   9 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 6     
+	   9 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Demo 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 1     
+Module PC 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module Mux_PC 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module if_flush 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input      1 Bit        Muxes := 2     
+Module forward_compare 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 7     
+Module forward 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 6     
+Module MEM_WB 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
+Module EX_MEM 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
+Module ID_EX_register 
+Detailed RTL Component Info : 
++---Registers : 
+	              134 Bit    Registers := 1     
+	               32 Bit    Registers := 3     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
++---Muxes : 
+	   2 Input    134 Bit        Muxes := 1     
+Module IFID 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+Module InstructionMem 
+Detailed RTL Component Info : 
++---Muxes : 
+	  31 Input     32 Bit        Muxes := 1     
+Module IF 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module control 
+Detailed RTL Component Info : 
++---Muxes : 
+	   9 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   9 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 2     
+	   9 Input      1 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+Module adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+Module mux_2_1_32bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module mux_4_1_32bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+Module mux_2_1_5bit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module ALU_Control 
+Detailed RTL Component Info : 
++---Muxes : 
+	   9 Input      4 Bit        Muxes := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module DataMem 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module clkdiv_1Hz 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module RingCounter 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "clkdiv1k/count" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "clkdiv1k/clkdiv" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design mem has unconnected port addr[31]
+WARNING: [Synth 8-3331] design mem has unconnected port addr[30]
+WARNING: [Synth 8-3331] design mem has unconnected port addr[29]
+WARNING: [Synth 8-3331] design mem has unconnected port addr[28]
+WARNING: [Synth 8-3331] design mem has unconnected port addr[27]
+WARNING: [Synth 8-3331] design mem has unconnected port addr[26]
+WARNING: [Synth 8-3331] design mem has unconnected port addr[25]
+WARNING: [Synth 8-3331] design mem has unconnected port addr[24]
+WARNING: [Synth 8-3331] design mem has unconnected port addr[23]
+WARNING: [Synth 8-3331] design mem has unconnected port addr[22]
+WARNING: [Synth 8-3331] design mem has unconnected port addr[21]
+WARNING: [Synth 8-3331] design mem has unconnected port addr[20]
+WARNING: [Synth 8-3331] design mem has unconnected port addr[19]
+WARNING: [Synth 8-3331] design mem has unconnected port addr[18]
+WARNING: [Synth 8-3331] design mem has unconnected port addr[17]
+WARNING: [Synth 8-3331] design mem has unconnected port addr[16]
+WARNING: [Synth 8-3331] design mem has unconnected port addr[15]
+WARNING: [Synth 8-3331] design mem has unconnected port addr[14]
+WARNING: [Synth 8-3331] design mem has unconnected port addr[13]
+WARNING: [Synth 8-3331] design mem has unconnected port addr[12]
+WARNING: [Synth 8-3331] design mem has unconnected port addr[11]
+WARNING: [Synth 8-3331] design mem has unconnected port addr[10]
+WARNING: [Synth 8-3331] design mem has unconnected port addr[9]
+WARNING: [Synth 8-3331] design mem has unconnected port addr[8]
+WARNING: [Synth 8-3331] design mem has unconnected port addr[7]
+WARNING: [Synth 8-3331] design mem has unconnected port addr[1]
+WARNING: [Synth 8-3331] design mem has unconnected port addr[0]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[31]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[30]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[29]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[28]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[27]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[26]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[25]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[24]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[23]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[22]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[21]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[20]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[19]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[18]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[17]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[16]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[15]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[14]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[13]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[12]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[11]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[10]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[9]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[8]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[7]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[6]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[5]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[4]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[3]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[2]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[1]
+WARNING: [Synth 8-3331] design IF has unconnected port PC[0]
+WARNING: [Synth 8-3331] design hazard has unconnected port ifidrd[4]
+WARNING: [Synth 8-3331] design hazard has unconnected port ifidrd[3]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[125]' (FD) to 'pipeline/ie/MEM_out_reg[0]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[132]' (FD) to 'pipeline/ie/WB_out_reg[0]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[79]' (FD) to 'pipeline/ie/regdata1_out_reg[0]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[47]' (FD) to 'pipeline/ie/regdata2_out_reg[0]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[80]' (FD) to 'pipeline/ie/regdata1_out_reg[1]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[48]' (FD) to 'pipeline/ie/regdata2_out_reg[1]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[81]' (FD) to 'pipeline/ie/regdata1_out_reg[2]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[49]' (FD) to 'pipeline/ie/regdata2_out_reg[2]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[82]' (FD) to 'pipeline/ie/regdata1_out_reg[3]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[50]' (FD) to 'pipeline/ie/regdata2_out_reg[3]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[83]' (FD) to 'pipeline/ie/regdata1_out_reg[4]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[51]' (FD) to 'pipeline/ie/regdata2_out_reg[4]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[84]' (FD) to 'pipeline/ie/regdata1_out_reg[5]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[52]' (FD) to 'pipeline/ie/regdata2_out_reg[5]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[85]' (FD) to 'pipeline/ie/regdata1_out_reg[6]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[21]' (FD) to 'pipeline/ie/imm_out_reg[6]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[53]' (FD) to 'pipeline/ie/regdata2_out_reg[6]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[86]' (FD) to 'pipeline/ie/regdata1_out_reg[7]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[22]' (FD) to 'pipeline/ie/imm_out_reg[7]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[54]' (FD) to 'pipeline/ie/regdata2_out_reg[7]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[87]' (FD) to 'pipeline/ie/regdata1_out_reg[8]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[23]' (FD) to 'pipeline/ie/imm_out_reg[8]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[55]' (FD) to 'pipeline/ie/regdata2_out_reg[8]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[88]' (FD) to 'pipeline/ie/regdata1_out_reg[9]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[24]' (FD) to 'pipeline/ie/imm_out_reg[9]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[56]' (FD) to 'pipeline/ie/regdata2_out_reg[9]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[89]' (FD) to 'pipeline/ie/regdata1_out_reg[10]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[25]' (FD) to 'pipeline/ie/imm_out_reg[10]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[57]' (FD) to 'pipeline/ie/regdata2_out_reg[10]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[90]' (FD) to 'pipeline/ie/regdata1_out_reg[11]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[26]' (FD) to 'pipeline/ie/imm_out_reg[11]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[0]' (FD) to 'pipeline/ie/imm_out_reg[11]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/imm_out_reg[11]' (FD) to 'pipeline/ie/rd_out_reg[0]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[58]' (FD) to 'pipeline/ie/regdata2_out_reg[11]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[91]' (FD) to 'pipeline/ie/regdata1_out_reg[12]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[27]' (FD) to 'pipeline/ie/imm_out_reg[12]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[1]' (FD) to 'pipeline/ie/imm_out_reg[12]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/imm_out_reg[12]' (FD) to 'pipeline/ie/rd_out_reg[1]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[59]' (FD) to 'pipeline/ie/regdata2_out_reg[12]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[92]' (FD) to 'pipeline/ie/regdata1_out_reg[13]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[28]' (FD) to 'pipeline/ie/imm_out_reg[13]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[2]' (FD) to 'pipeline/ie/imm_out_reg[13]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/imm_out_reg[13]' (FD) to 'pipeline/ie/rd_out_reg[2]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[60]' (FD) to 'pipeline/ie/regdata2_out_reg[13]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[93]' (FD) to 'pipeline/ie/regdata1_out_reg[14]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[29]' (FD) to 'pipeline/ie/imm_out_reg[14]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[3]' (FD) to 'pipeline/ie/imm_out_reg[14]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/imm_out_reg[14]' (FD) to 'pipeline/ie/rd_out_reg[3]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[61]' (FD) to 'pipeline/ie/regdata2_out_reg[14]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[94]' (FD) to 'pipeline/ie/regdata1_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/imm_out_reg[15]' (FD) to 'pipeline/ie/imm_out_reg[16]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[30]' (FD) to 'pipeline/ie/imm_out_reg[16]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[32]' (FD) to 'pipeline/ie/imm_out_reg[16]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[34]' (FD) to 'pipeline/ie/imm_out_reg[16]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[36]' (FD) to 'pipeline/ie/imm_out_reg[16]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[38]' (FD) to 'pipeline/ie/imm_out_reg[16]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[40]' (FD) to 'pipeline/ie/imm_out_reg[16]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[42]' (FD) to 'pipeline/ie/imm_out_reg[16]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[44]' (FD) to 'pipeline/ie/imm_out_reg[16]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[46]' (FD) to 'pipeline/ie/imm_out_reg[16]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[45]' (FD) to 'pipeline/ie/imm_out_reg[16]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[43]' (FD) to 'pipeline/ie/imm_out_reg[16]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[41]' (FD) to 'pipeline/ie/imm_out_reg[16]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[39]' (FD) to 'pipeline/ie/imm_out_reg[16]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[37]' (FD) to 'pipeline/ie/imm_out_reg[16]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[35]' (FD) to 'pipeline/ie/imm_out_reg[16]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[33]' (FD) to 'pipeline/ie/imm_out_reg[16]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[31]' (FD) to 'pipeline/ie/imm_out_reg[16]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[4]' (FD) to 'pipeline/ie/imm_out_reg[16]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[62]' (FD) to 'pipeline/ie/regdata2_out_reg[15]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[95]' (FD) to 'pipeline/ie/regdata1_out_reg[16]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/imm_out_reg[16]' (FD) to 'pipeline/ie/imm_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[63]' (FD) to 'pipeline/ie/regdata2_out_reg[16]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[96]' (FD) to 'pipeline/ie/regdata1_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/imm_out_reg[17]' (FD) to 'pipeline/ie/imm_out_reg[18]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[64]' (FD) to 'pipeline/ie/regdata2_out_reg[17]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[97]' (FD) to 'pipeline/ie/regdata1_out_reg[18]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/imm_out_reg[18]' (FD) to 'pipeline/ie/imm_out_reg[19]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[65]' (FD) to 'pipeline/ie/regdata2_out_reg[18]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[98]' (FD) to 'pipeline/ie/regdata1_out_reg[19]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/imm_out_reg[19]' (FD) to 'pipeline/ie/imm_out_reg[20]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[66]' (FD) to 'pipeline/ie/regdata2_out_reg[19]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[99]' (FD) to 'pipeline/ie/regdata1_out_reg[20]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/imm_out_reg[20]' (FD) to 'pipeline/ie/imm_out_reg[21]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[67]' (FD) to 'pipeline/ie/regdata2_out_reg[20]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[100]' (FD) to 'pipeline/ie/regdata1_out_reg[21]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/imm_out_reg[21]' (FD) to 'pipeline/ie/imm_out_reg[22]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[68]' (FD) to 'pipeline/ie/regdata2_out_reg[21]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[101]' (FD) to 'pipeline/ie/regdata1_out_reg[22]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/imm_out_reg[22]' (FD) to 'pipeline/ie/imm_out_reg[23]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[69]' (FD) to 'pipeline/ie/regdata2_out_reg[22]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[102]' (FD) to 'pipeline/ie/regdata1_out_reg[23]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/imm_out_reg[23]' (FD) to 'pipeline/ie/imm_out_reg[24]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[70]' (FD) to 'pipeline/ie/regdata2_out_reg[23]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[103]' (FD) to 'pipeline/ie/regdata1_out_reg[24]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/imm_out_reg[24]' (FD) to 'pipeline/ie/imm_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[71]' (FD) to 'pipeline/ie/regdata2_out_reg[24]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[104]' (FD) to 'pipeline/ie/regdata1_out_reg[25]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/imm_out_reg[25]' (FD) to 'pipeline/ie/imm_out_reg[26]'
+INFO: [Synth 8-3886] merging instance 'pipeline/ie/ID_EX_reg[72]' (FD) to 'pipeline/ie/regdata2_out_reg[25]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pipeline/ii/instruction_out_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pipeline/ie/rt2_out_reg[2] )
+WARNING: [Synth 8-3332] Sequential element (pipeline/p/pc_reg[31]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (pipeline/p/pc_reg[30]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (pipeline/p/pc_reg[29]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (pipeline/p/pc_reg[28]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (pipeline/p/pc_reg[27]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (pipeline/p/pc_reg[26]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (pipeline/p/pc_reg[25]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (pipeline/p/pc_reg[24]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (pipeline/p/pc_reg[23]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (pipeline/p/pc_reg[22]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (pipeline/p/pc_reg[21]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (pipeline/p/pc_reg[20]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (pipeline/p/pc_reg[19]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (pipeline/p/pc_reg[18]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (pipeline/p/pc_reg[17]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (pipeline/p/pc_reg[16]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (pipeline/ie/ID_EX_reg[131]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (pipeline/ie/ID_EX_reg[124]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (pipeline/ie/ID_EX_reg[123]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (pipeline/ie/ID_EX_reg[117]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (pipeline/ie/ID_EX_reg[116]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (pipeline/ie/ID_EX_reg[115]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (pipeline/ie/ID_EX_reg[114]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (pipeline/ie/ID_EX_reg[113]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (pipeline/ie/ID_EX_reg[112]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (pipeline/ie/ID_EX_reg[111]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (pipeline/ii/instruction_out_reg[30]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (pipeline/ii/PC_out_reg[31]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (pipeline/ii/PC_out_reg[30]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (pipeline/ii/PC_out_reg[29]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (pipeline/ii/PC_out_reg[28]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (pipeline/ii/PC_out_reg[27]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (pipeline/ii/PC_out_reg[26]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (pipeline/ii/PC_out_reg[25]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (pipeline/ii/PC_out_reg[24]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (pipeline/ii/PC_out_reg[23]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (pipeline/ii/PC_out_reg[22]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (pipeline/ii/PC_out_reg[21]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (pipeline/ii/PC_out_reg[20]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (pipeline/ii/PC_out_reg[19]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (pipeline/ii/PC_out_reg[18]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (pipeline/ii/PC_out_reg[17]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (pipeline/ii/PC_out_reg[16]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (pipeline/ie/rt2_out_reg[2]) is unused and will be removed from module Demo.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 647.902 ; gain = 416.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|Demo        | ca1        | 32x7          | LUT            | 
+|Demo        | ca2        | 32x7          | LUT            | 
+|Demo        | ca3        | 32x7          | LUT            | 
+|Demo        | ca4        | 32x7          | LUT            | 
+|Demo        | ca1        | 32x7          | LUT            | 
+|Demo        | ca2        | 32x7          | LUT            | 
+|Demo        | ca3        | 32x7          | LUT            | 
+|Demo        | ca4        | 32x7          | LUT            | 
++------------+------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+------------------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object                   | Inference | Size (Depth x Width) | Primitives      | 
++------------+------------------------------+-----------+----------------------+-----------------+
+|Demo        | pipeline/i/r/register_reg    | Implied   | 32 x 32              | RAM32M x 18     | 
+|Demo        | pipeline/m/dm/DataMemory_reg | Implied   | 32 x 32              | RAM32X1S x 32   | 
++------------+------------------------------+-----------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 647.902 ; gain = 416.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 647.902 ; gain = 416.902
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (pipeline/p/pc_reg[0]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (pipeline/ii/PC_out_reg[0]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (ca_reg[6]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (ca_reg[5]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (ca_reg[4]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (ca_reg[3]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (ca_reg[2]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (ca_reg[1]) is unused and will be removed from module Demo.
+WARNING: [Synth 8-3332] Sequential element (ca_reg[0]) is unused and will be removed from module Demo.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:28 . Memory (MB): peak = 661.770 ; gain = 430.770
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 661.770 ; gain = 430.770
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 661.770 ; gain = 430.770
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 661.770 ; gain = 430.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 661.770 ; gain = 430.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 661.770 ; gain = 430.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 661.770 ; gain = 430.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |CARRY4   |    35|
+|3     |LUT1     |    61|
+|4     |LUT2     |    46|
+|5     |LUT3     |   125|
+|6     |LUT4     |   136|
+|7     |LUT5     |   247|
+|8     |LUT6     |   228|
+|9     |RAM32M   |    15|
+|10    |RAM32X1S |    32|
+|11    |FDRE     |   322|
+|12    |LD       |     1|
+|13    |IBUF     |     8|
+|14    |OBUF     |    11|
++------+---------+------+
+
+Report Instance Areas: 
++------+-----------+---------------+------+
+|      |Instance   |Module         |Cells |
++------+-----------+---------------+------+
+|1     |top        |               |  1269|
+|2     |  clkdiv1k |clkdiv_1Hz     |    83|
+|3     |  count    |RingCounter    |     8|
+|4     |  pipeline |top            |  1157|
+|5     |    e      |EX             |    16|
+|6     |      a3   |ALU            |    16|
+|7     |    em     |EX_MEM         |   223|
+|8     |    i      |idwb           |    23|
+|9     |      r    |register       |    15|
+|10    |      a    |adder          |     4|
+|11    |      eq   |equal          |     3|
+|12    |    ie     |ID_EX_register |   239|
+|13    |    iff    |IF             |     4|
+|14    |    ii     |IFID           |   166|
+|15    |    l      |lwsw           |     1|
+|16    |    m      |mem            |    32|
+|17    |      dm   |DataMem        |    32|
+|18    |    mw     |MEM_WB         |   354|
+|19    |    p      |PC             |    99|
++------+-----------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 661.770 ; gain = 430.770
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 124 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:24 . Memory (MB): peak = 661.770 ; gain = 132.063
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:29 . Memory (MB): peak = 661.770 ; gain = 430.770
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 91 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 15 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 48 instances were transformed.
+  LD => LDCE: 1 instances
+  RAM32M => RAM32M (inverted pins: WCLK) (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 15 instances
+  RAM32X1S => RAM32X1S (RAMS32): 32 instances
+
+202 Infos, 180 Warnings, 4 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 661.770 ; gain = 438.539
+INFO: [Common 17-1381] The checkpoint 'D:/Junior/PipelineFPGA/PipelineFPGA.runs/synth_1/Demo.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 661.770 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Thu Nov  7 10:24:32 2019...

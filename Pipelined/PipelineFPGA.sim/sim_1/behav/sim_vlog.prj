@@ -1,0 +1,36 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "../../../../pipeline/hazard detection.v"
+verilog xil_defaultlib  "../../../../pipeline/EX.v"
+verilog xil_defaultlib  "../../../../pipeline/IFID.v"
+verilog xil_defaultlib  "../../../../pipeline/PC.v"
+verilog xil_defaultlib  "../../../../pipeline/MEM_WB.v"
+verilog xil_defaultlib  "../../../../pipeline/shift2.v"
+verilog xil_defaultlib  "../../../../pipeline/control.v"
+verilog xil_defaultlib  "../../../../pipeline/DataMem.v"
+verilog xil_defaultlib  "../../../../pipeline/lwsw.v"
+verilog xil_defaultlib  "../../../../pipeline/idwb.v"
+verilog xil_defaultlib  "../../../../pipeline/top.v"
+verilog xil_defaultlib  "../../../../pipeline/signextension.v"
+verilog xil_defaultlib  "../../../../pipeline/register.v"
+verilog xil_defaultlib  "../../../../pipeline/mux_2_18bit.v"
+verilog xil_defaultlib  "../../../../pipeline/equal.v"
+verilog xil_defaultlib  "../../../../pipeline/InstructionMem.v"
+verilog xil_defaultlib  "../../../../pipeline/sim.v"
+verilog xil_defaultlib  "../../../../pipeline/forward.v"
+verilog xil_defaultlib  "../../../../pipeline/and.v"
+verilog xil_defaultlib  "../../../../pipeline/mux.v"
+verilog xil_defaultlib  "../../../../pipeline/mem.v"
+verilog xil_defaultlib  "../../../../pipeline/IF.v"
+verilog xil_defaultlib  "../../../../pipeline/adder.v"
+verilog xil_defaultlib  "../../../../pipeline/EX_MEM.v"
+verilog xil_defaultlib  "../../../../pipeline/if_flush.v"
+verilog xil_defaultlib  "../../../../pipeline/assign_zero_1bit.v"
+verilog xil_defaultlib  "../../../../pipeline/ID_EX.v"
+verilog xil_defaultlib  "../../../../pipeline/or.v"
+verilog xil_defaultlib  "../../../../pipeline/Mux_PC.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

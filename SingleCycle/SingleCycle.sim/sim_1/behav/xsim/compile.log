@@ -1,0 +1,17 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Storage/UMSJTU JI/courses/7/VE370/Projects/Project2/VE370project2/VE370project2.srcs/sources_1/new/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Storage/UMSJTU JI/courses/7/VE370/Projects/Project2/VE370project2/VE370project2.srcs/sources_1/new/ALU_Control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_Control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Storage/UMSJTU JI/courses/7/VE370/Projects/Project2/VE370project2/VE370project2.srcs/sources_1/new/ControlUnit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ControlUnit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Storage/UMSJTU JI/courses/7/VE370/Projects/Project2/VE370project2/VE370project2.srcs/sources_1/new/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+WARNING: [VRFC 10-2019] loop variable declaration is not allowed in this mode of verilog [D:/Storage/UMSJTU JI/courses/7/VE370/Projects/Project2/VE370project2/VE370project2.srcs/sources_1/new/DataMem.v:11]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Storage/UMSJTU JI/courses/7/VE370/Projects/Project2/VE370project2/VE370project2.srcs/sources_1/new/InstructionMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Storage/UMSJTU JI/courses/7/VE370/Projects/Project2/VE370project2/VE370project2.srcs/sources_1/new/RegisterFile.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module RegisterFile
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Storage/UMSJTU JI/courses/7/VE370/Projects/Project2/VE370project2/VE370project2.srcs/sources_1/new/SingleCycle.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SingleCycle
+INFO: [VRFC 10-2458] undeclared symbol regnum, assumed default net type wire [D:/Storage/UMSJTU JI/courses/7/VE370/Projects/Project2/VE370project2/VE370project2.srcs/sources_1/new/SingleCycle.v:49]
+INFO: [VRFC 10-2458] undeclared symbol regdata, assumed default net type wire [D:/Storage/UMSJTU JI/courses/7/VE370/Projects/Project2/VE370project2/VE370project2.srcs/sources_1/new/SingleCycle.v:49]

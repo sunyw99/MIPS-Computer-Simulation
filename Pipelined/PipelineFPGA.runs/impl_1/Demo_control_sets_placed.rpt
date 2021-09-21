@@ -1,0 +1,74 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+| Date         : Thu Nov  7 10:25:04 2019
+| Host         : DESKTOP-BJL2K5I running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Demo_control_sets_placed.rpt
+| Design       : Demo
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    11 |
+| Unused register locations in slices containing registers |    29 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             201 |          122 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              69 |           20 |
+| Yes          | No                    | No                     |              30 |            9 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              23 |            6 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++-----------------------------------+-----------------------------------------+-----------------------------------------+------------------+----------------+
+|            Clock Signal           |              Enable Signal              |             Set/Reset Signal            | Slice Load Count | Bel Load Count |
++-----------------------------------+-----------------------------------------+-----------------------------------------+------------------+----------------+
+|  pipeline/mw/ReadDataWB_reg[31]_0 |                                         |                                         |                1 |              1 |
+|  clk_IBUF_BUFG                    |                                         |                                         |                2 |              2 |
+|  clkdiv1k/CLK                     |                                         |                                         |                1 |              2 |
+|  clk2_IBUF_BUFG                   |                                         | pipeline/ie/EX_out[0]_i_1_n_0           |                2 |              6 |
+|  clk2_IBUF_BUFG                   | pipeline/ii/instruction_out[29]_i_2_n_0 | pipeline/ii/instruction_out[29]_i_1_n_0 |                6 |             23 |
+|  clk2_IBUF_BUFG                   | pipeline/ie/pcwrite                     |                                         |                9 |             30 |
+|  clk_IBUF_BUFG                    |                                         | clkdiv1k/clkdiv                         |                8 |             31 |
+|  clk2_IBUF_BUFG                   |                                         | pipeline/em/ReadDataWB_reg[31]          |               10 |             32 |
+|  clk2_IBUF_BUFG                   | pipeline/em/mem_mem_0                   |                                         |                8 |             32 |
+| ~clk2_IBUF_BUFG                   | pipeline/mw/wb_wb_1                     |                                         |               15 |            120 |
+|  clk2_IBUF_BUFG                   |                                         |                                         |              118 |            196 |
++-----------------------------------+-----------------------------------------+-----------------------------------------+------------------+----------------+
+
+
++--------+-----------------------+
+| Fanout | Number of ControlSets |
++--------+-----------------------+
+| 1      |                     1 |
+| 2      |                     2 |
+| 6      |                     1 |
+| 16+    |                     7 |
++--------+-----------------------+
+
+

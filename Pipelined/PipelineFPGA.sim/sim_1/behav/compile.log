@@ -1,0 +1,68 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Junior/pipeline/hazard detection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hazard
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Junior/pipeline/EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module ALU_Control
+INFO: [VRFC 10-311] analyzing module EX
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Junior/pipeline/IFID.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IFID
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Junior/pipeline/PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Junior/pipeline/MEM_WB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MEM_WB
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Junior/pipeline/shift2.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shift2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Junior/pipeline/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Junior/pipeline/DataMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DataMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Junior/pipeline/lwsw.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lwsw
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Junior/pipeline/idwb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module idwb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Junior/pipeline/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Junior/pipeline/signextension.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module signextension
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Junior/pipeline/register.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Junior/pipeline/mux_2_18bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_2_1_8bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Junior/pipeline/equal.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module equal
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Junior/pipeline/InstructionMem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InstructionMem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Junior/pipeline/sim.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sim
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Junior/pipeline/forward.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module forward
+INFO: [VRFC 10-311] analyzing module forward_compare
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Junior/pipeline/and.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module and_a_b
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Junior/pipeline/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux_2_1_32bit
+INFO: [VRFC 10-311] analyzing module mux_4_1_32bit
+INFO: [VRFC 10-311] analyzing module mux_2_1_5bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Junior/pipeline/mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Junior/pipeline/IF.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Junior/pipeline/adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Junior/pipeline/EX_MEM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_MEM
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Junior/pipeline/if_flush.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module if_flush
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Junior/pipeline/assign_zero_1bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module assign_zero_1bit
+INFO: [VRFC 10-311] analyzing module assign_one_1bit
+INFO: [VRFC 10-311] analyzing module assign_zero_32bit
+INFO: [VRFC 10-311] analyzing module assign_one_32bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Junior/pipeline/ID_EX.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_EX_register
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Junior/pipeline/or.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module or_a_b
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Junior/pipeline/Mux_PC.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Mux_PC
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Junior/PipelineFPGA/PipelineFPGA.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

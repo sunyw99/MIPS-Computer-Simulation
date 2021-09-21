@@ -1,0 +1,56 @@
+Vivado Simulator 2017.2
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/Vivado/2017.2/bin/unwrapped/win64.o/xelab.exe -wto 0d7b79556ad047e69a8837650401e45b --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot sim_behav xil_defaultlib.sim xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1783] select index 31 into memory is out of bounds [D:/Junior/pipeline/InstructionMem.v:61]
+WARNING: [VRFC 10-1783] select index 32 into memory is out of bounds [D:/Junior/pipeline/InstructionMem.v:62]
+WARNING: [VRFC 10-1783] select index 33 into memory is out of bounds [D:/Junior/pipeline/InstructionMem.v:63]
+WARNING: [VRFC 10-1783] select index 34 into memory is out of bounds [D:/Junior/pipeline/InstructionMem.v:64]
+WARNING: [VRFC 10-1783] select index 35 into memory is out of bounds [D:/Junior/pipeline/InstructionMem.v:65]
+WARNING: [VRFC 10-1783] select index 36 into memory is out of bounds [D:/Junior/pipeline/InstructionMem.v:66]
+WARNING: [VRFC 10-1783] select index 37 into memory is out of bounds [D:/Junior/pipeline/InstructionMem.v:67]
+WARNING: [VRFC 10-1783] select index 38 into memory is out of bounds [D:/Junior/pipeline/InstructionMem.v:68]
+WARNING: [VRFC 10-1783] select index 39 into memory is out of bounds [D:/Junior/pipeline/InstructionMem.v:69]
+WARNING: [VRFC 10-1783] select index 40 into memory is out of bounds [D:/Junior/pipeline/InstructionMem.v:70]
+WARNING: [VRFC 10-1783] select index 41 into memory is out of bounds [D:/Junior/pipeline/InstructionMem.v:71]
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "D:/Junior/pipeline/ID_EX.v" Line 1. Module ID_EX_register doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Junior/pipeline/EX.v" Line 56. Module EX doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Junior/pipeline/EX.v" Line 28. Module ALU_Control doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "D:/Junior/pipeline/EX.v" Line 2. Module ALU doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.hazard
+Compiling module xil_defaultlib.PC
+Compiling module xil_defaultlib.Mux_PC
+Compiling module xil_defaultlib.if_flush
+Compiling module xil_defaultlib.forward_compare
+Compiling module xil_defaultlib.forward
+Compiling module xil_defaultlib.lwsw
+Compiling module xil_defaultlib.MEM_WB
+Compiling module xil_defaultlib.EX_MEM
+Compiling module xil_defaultlib.ID_EX_register
+Compiling module xil_defaultlib.IFID
+Compiling module xil_defaultlib.InstructionMem
+Compiling module xil_defaultlib.IF
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.signextension
+Compiling module xil_defaultlib.shift2
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.mux_2_1_32bit
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.mux_4_1_32bit
+Compiling module xil_defaultlib.equal
+Compiling module xil_defaultlib.idwb
+Compiling module xil_defaultlib.mux_2_1_5bit
+Compiling module xil_defaultlib.ALU_Control
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.EX
+Compiling module xil_defaultlib.DataMem
+Compiling module xil_defaultlib.mem
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.sim
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot sim_behav
